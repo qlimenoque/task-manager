@@ -1,5 +1,6 @@
 {
-    "port": 3000,
-    "jwtSecret": "replaceThisSecretWithStrongSentence",
-    "mongoUri": "mongodb+srv://{username}:{password}@cluster0-eucd5.mongodb.net/task-manager-api?retryWrites=true&w=majority"
+    "PORT": 3000,
+    "JWT_SECRET": "replaceThisSecretWithStrongSentence",
+    "MONGODB_URI": "mongodb+srv://{username}:{password}@cluster0-eucd5.mongodb.net/task-manager-api?retryWrites=true&w=majority",
+    "SENDGRID_API_KEY": "{API_KEY}"
 }

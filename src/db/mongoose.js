@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
+const config = require('config');
 
-const databaseName = 'task-manager-api';
-const connectionURL = `mongodb+srv://{username}:{password}@cluster0-eucd5.mongodb.net/${databaseName}?retryWrites=true&w=majority`;
+const connectionURL = config.get('mongoUri');
 
 mongoose.connect(connectionURL, {
     useNewUrlParser: true,
